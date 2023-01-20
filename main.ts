@@ -3,6 +3,10 @@ input.onButtonPressed(Button.A, function () {
     basic.showIcon(IconNames.Meh)
     basic.showIcon(IconNames.StickFigure)
     basic.showIcon(IconNames.Pitchfork)
+    music.playMelody("B A G A B G A - ", 130)
+    music.playMelody("A G A - A G A - ", 150)
+    music.playMelody("B A G A B G A - ", 130)
+    music.playMelody("C5 G C5 A - - - - ", 95)
 })
 input.onGesture(Gesture.FreeFall, function () {
     basic.showLeds(`
@@ -46,4 +50,3 @@ input.onGesture(Gesture.Shake, function () {
         basic.showIcon(IconNames.Happy)
     }
 })
-basic.showIcon(IconNames.Heart)
