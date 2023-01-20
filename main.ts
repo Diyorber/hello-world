@@ -4,6 +4,27 @@ input.onButtonPressed(Button.A, function () {
     basic.showIcon(IconNames.StickFigure)
     basic.showIcon(IconNames.Pitchfork)
 })
+input.onGesture(Gesture.FreeFall, function () {
+    basic.showLeds(`
+        # . . . #
+        . # . # .
+        . . # . .
+        . # . # .
+        # . . . #
+        `)
+    basic.showIcon(IconNames.Heart)
+})
+input.onButtonPressed(Button.AB, function () {
+    basic.showIcon(IconNames.Rollerskate)
+    basic.showLeds(`
+        . . . # .
+        . . . # .
+        . . . # .
+        . . . # .
+        . # # # .
+        `)
+    basic.showString("\"Diyorbek is Kyle's Son\" ")
+})
 input.onButtonPressed(Button.B, function () {
     for (let index = 0; index < 1; index++) {
         basic.showIcon(IconNames.Sword)
