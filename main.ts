@@ -6,7 +6,7 @@ input.onButtonPressed(Button.A, function () {
     music.playMelody("B A G A B G A - ", 130)
     music.playMelody("A G A - A G A - ", 150)
     music.playMelody("B A G A B G A - ", 130)
-    music.playMelody("C5 G C5 A - - - - ", 95)
+    music.playMelody("C5 G C5 A B A - - ", 140)
 })
 input.onGesture(Gesture.FreeFall, function () {
     basic.showLeds(`
